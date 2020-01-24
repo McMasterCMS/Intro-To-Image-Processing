@@ -1,2 +1,2 @@
 # Intro-To-Image-Processing
-McMaster Computational Society Introduction to Image Processing
+McMaster Computational Society'sIntroduction to Image Processing
