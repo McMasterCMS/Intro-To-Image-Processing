@@ -1,0 +1,20 @@
+# Python lines to run before the tutorial: 
+
+import cv2 
+import numpy as np 
+from matplotlib import pyplot as plt 
+
+# Use basic function written using a library built into python 3 called tkinter to load images 
+# If you're interested in how the code actually works, look up the documentation for tkinter's 
+# TK and askopenfilename documentation. 
+import tkinter 
+from tkinter.filedialog import askopenfilename 
+
+def loadFileDir(description=None): 
+    root = tkinter.Tk() 
+    if description == None:
+        root.filename = askopenfilename(parent=root, title="Choose folder to assign path:") 
+    else: 
+        root.filename = askopenfilename(parent=root, title="Choose " + description + " path:") 
+    root.destroy() 
+    return root.filename 
